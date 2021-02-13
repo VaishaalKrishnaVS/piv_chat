@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "996899813556",
+    "project_id": "piv-chat",
+    "storage_bucket": "piv-chat.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:996899813556:android:13017503987a1fa443ffe1",
+        "android_client_info": {
+          "package_name": "co.vsv.piv_chat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "996899813556-kc5v22frl374lqo5g34mdfrpv1b1tcln.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAl0lku1XbNRU7Cq2M40tdlNP_7Z3cQPKI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "996899813556-kc5v22frl374lqo5g34mdfrpv1b1tcln.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
