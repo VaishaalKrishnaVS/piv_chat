@@ -21,16 +21,19 @@ class _WelcomeScreenState extends State<WelcomeScreen>
     super.initState();
 
     controller =
-        AnimationController(duration: Duration(seconds: 4), vsync: this);
-
-    animation =
-        ColorTween(begin: Colors.blue, end: Colors.white).animate(controller);
-
+        AnimationController(duration: Duration(seconds: 1), vsync: this);
+    animation = ColorTween(begin: Colors.blueGrey, end: Colors.white)
+        .animate(controller);
     controller.forward();
-
     controller.addListener(() {
       setState(() {});
     });
+  }
+
+  @override
+  void dispose() {
+    controller.dispose();
+    super.dispose();
   }
 
   @override
@@ -46,13 +49,14 @@ class _WelcomeScreenState extends State<WelcomeScreen>
             Row(
               children: <Widget>[
                 Hero(
-                    tag: 'logo',
-                    child: Container(
-                      child: Image.asset('images/logo.png'),
-                      height: 60.0,
-                    )),
+                  tag: 'logo',
+                  child: Container(
+                    child: Image.asset('images/logo.png'),
+                    height: 60.0,
+                  ),
+                ),
                 TypewriterAnimatedTextKit(
-                  text: ['Piv Chat'],
+                  text: ['Flash Chat'],
                   textStyle: TextStyle(
                     fontSize: 45.0,
                     fontWeight: FontWeight.w900,
@@ -64,7 +68,7 @@ class _WelcomeScreenState extends State<WelcomeScreen>
               height: 48.0,
             ),
             RoundedButton(
-              title: 'Log in',
+              title: 'Log In',
               colour: Colors.lightBlueAccent,
               onPressed: () {
                 Navigator.pushNamed(context, LoginScreen.id);
