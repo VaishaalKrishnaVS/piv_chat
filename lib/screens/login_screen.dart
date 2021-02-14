@@ -94,4 +94,3 @@ class _LoginScreenState extends State<LoginScreen> {
     );
   }
 }
-© 2021 GitHub, Inc.
